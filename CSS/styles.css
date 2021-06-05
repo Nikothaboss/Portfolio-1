@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+/*. font-family: 'Montserrat', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: linear-gradient(180deg, #000000 17%, #150b23 30%);
+  --text-highligth-color: #bf4762;
+  --section-headline-color: #dcd1fb;
+  --about-me-section-bg-color: ;
+}
+
+/* ! General */
+
+body {
+  background: var(--main-bg-color);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+span {
+  color: var(--text-highligth-color);
+}
+
+.btn {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 20px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 2px 3px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+/* ! Intro section */
+.intro {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /* margin-top: 100px; */
+  margin-bottom: 100px;
+}
+
+.intro img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ! About me section */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me h2 {
+  font-size: 60px;
+  color: var(--section-headline-color);
+  padding: 10px;
+  text-align: left;
+}
+
+.about-me-text {
+  font-size: 18px;
+}
+
+.about-me p {
+  /* margin-bottom: 20px; */
+  padding: 15px;
+  line-height: 1.6;
+}
+
+.my-skills {
+  margin: 20px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+}
+
+/* ! Projects section */
+
+.projects-container {
+  width: 300px;
+  margin: auto;
+  color: white;
+}
+
+.projects-container img {
+  object-fit: contain;
+  width: 100%;
+}
