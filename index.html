@@ -9,6 +9,34 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="hamburger-icon-container">
+            <div class="hamburger-icon">
+                <div class="hamburger-lines"></div>
+            </div>
+        </div>
+        <div class="side-navbar">
+            <div class="logo">
+                <h1>N</h1>
+            </div>
+            <div class="navbar-info">
+                <h2>Nikolai</h2>
+                <p>Web Developer</p>
+                <i class="far fa-user-circle fa-2x"></i>
+            </div>
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>My Work</li>
+                <li>Blog</li>
+            </ul>
+            <div class="social-media">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-discord fa-2x"></i>
+            </div>
+        </div>
+    </header>
     <section class="intro">
         <div class="intro-text">
             <h1>Hi! My name is <span>Nikolai</span>,</h1>
@@ -29,7 +57,7 @@
                 <p>Hello! My name is <span>Nikolai</span>, I am a front end Developer currently working as a mentor at <span>Norrof</span> School of Technology</p>
                 <p>I'm a positive and hard working person who's been working with web Development for 2 years. I love Learning New Things and I'm always looking for ways to improve myself</p>
             </div>
-            <div>
+            <div class="about-me-tech">
                 <h3><span>Technologies I have worked with</span></h3>
                 <ul class="my-skills">
                     <li>HTML</li>
@@ -43,17 +71,22 @@
     </section>
 
     <section class="projects">
-        <h2>My Portfolio</h2>
+        <div class="section-title-container">
+            <h2 class="headline-section-title projects-title">My Portfolio</h2>
+        </div>
         <div class="projects-container"></div>
     </section>
 
     <section class="blog">
-        <h2>Blog</h2>
+        <div class="section-title-container">
+            <h2 class="headline-section-title">Blog</h2>
+        </div>
         <div class="blog-posts"></div>
     </section>
 
 
     <script src="/JS/portfolioDetails.js"></script>
     <script src="/JS/index.js"></script>
+    <script src="./JS/hamburger.js"></script>
 </body>
 </html>

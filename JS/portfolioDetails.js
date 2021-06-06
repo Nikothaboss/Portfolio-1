@@ -9,7 +9,7 @@ var portfolio = [
     {
         objectName : "communityScienceMuseum",
         title : "Community Science Museum",
-        image : `<img src="./img/Skjermbilde.PNG" alt="Game of blogs frontpage">`,
+        image : `<img src="./img/Community-Science-Museum-card-pic.JPG" alt="Game of blogs frontpage">`,
         technologyUsed : ["HTML", "CSS", "JavaScript"],
         shortDescription : "Placeholder text for Community Science Museum",
 
@@ -17,7 +17,7 @@ var portfolio = [
     {
         objectName : "gameHub",
         title : "Game Hub",
-        image : `<img src="./img/Skjermbilde.PNG" alt="Game of blogs frontpage">`,
+        image : `<img src="./img/Game-hub-card-pic.JPG" alt="Game of blogs frontpage">`,
         technologyUsed : ["HTML", "CSS", "JavaScript"],
         shortDescription : "Placeholder text for Game Hub",
     }

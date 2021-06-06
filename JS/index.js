@@ -7,7 +7,7 @@ const projectTemplate = (portfolio) =>{
         <div class="card">
             <a href="singleProject.html?title=${project.objectName}">${project.image}</a>
             <div class="card-info">
-                <h2>${project.title}</h2>
+                <h2 class="card-project-title">${project.title}</h2>
                 <p>${project.shortDescription}</p>
                 <h3>Technology used:</h3>
                 <ul class="tech-used">`;
