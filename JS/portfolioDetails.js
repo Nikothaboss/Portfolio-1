@@ -2,7 +2,7 @@ var portfolio = [
     {
         objectName : "gameOfBlogs",
         title : "Game of Blogs",
-        image : `<img src="./img/Skjermbilde.PNG" alt="Game of blogs frontpage">`,
+        image : `<img src="./img/game-of-blogs-card-pic.JPG" alt="Game of blogs frontpage">`,
         technologyUsed : ["HTML", "CSS", "JavaScript", "Wordpress"],
         shortDescription: "This is my latest exam at Noroff School of technology. Here I was tasked with using a headless Wordpress rest API to store data and use that data to create a dynamic website"
     },
