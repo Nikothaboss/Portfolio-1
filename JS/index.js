@@ -5,7 +5,7 @@ const projectTemplate = (portfolio) =>{
     for(project of portfolio){
         newDiv += `
         <div class="card">
-            <a href="singleProject.html?title=${project.objectName}">${project.image}</a>
+            <div class="card-img-container"><a href="singleProject.html?title=${project.objectName}">${project.image}</a></div>
             <div class="card-info">
                 <h2 class="card-project-title">${project.title}</h2>
                 <p>${project.shortDescription}</p>
