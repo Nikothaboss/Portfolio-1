@@ -41,10 +41,10 @@ aboutBtn.addEventListener("click", ()=>{
     productsSection.scrollIntoView()
 })
 
-// Få pilen på knappene til å rotere på hover
+//. Få pilen på knappene til å rotere på hover
 const introBtnArrow = document.querySelector(".intro-arrow")
 const aboutBtnArrow = document.querySelector(".about-arrow")
-console.log(aboutBtnArrow)
+
 
 introBtn.addEventListener("mouseover", ()=>{
     introBtnArrow.classList.add("arrow-rotate");
