@@ -46,6 +46,7 @@ fetch(url, {
 const blogTemplate =(posts)=>{
     let newPost = ``
     for(post of posts){
+        console.log(post.id)
         let media = post._embedded["wp:featuredmedia"];
         const date = post.date.replace("T", " ").trimEnd();
         for(details of media){
@@ -54,13 +55,13 @@ const blogTemplate =(posts)=>{
             <h2>Story of ${post.title.rendered}</h2>
             <span></span>
             <p>${details.caption.rendered}</p>
-            <a href="#">Read More</a>
+            <a href="single-blog.html?id=${post.id}">Read More</a>
         </div>
         <hr>
         `;
         }
 
-        console.log(date)
+        
         
     }
     blogPosts.innerHTML += newPost

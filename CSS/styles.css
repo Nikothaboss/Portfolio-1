@@ -26,6 +26,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
 
 section {
@@ -146,7 +147,7 @@ ul {
 .hamburger-icon-container {
   position: fixed;
   top: 40px;
-  right: 40px;
+  right: 20px;
   z-index: 9999;
   /* border: 1px solid white; */
   background-color: rgba(0, 0, 0, 0.39);
@@ -269,6 +270,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .about-me h2 {
@@ -286,13 +288,14 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   max-width: 500px;
-  height: 80%;
+  height: 100%;
 }
 
 .about-me p {
   /* margin-bottom: 20px; */
   padding: 15px;
   line-height: 1.9;
+  width: 320px;
 }
 
 h3 span {
@@ -308,6 +311,7 @@ h3 span {
   border: 1px dotted var(--section-headline-color);
   height: 200px;
   padding: 20px;
+  width: 320px;
 }
 
 .my-skills {
@@ -317,6 +321,10 @@ h3 span {
   width: 300px;
   height: 100px;
   padding: 15px;
+}
+
+.my-skills li{
+  margin-bottom: 10px;
 }
 
 /* ! Projects section */
@@ -350,7 +358,7 @@ h3 span {
 
 .card-img-container img {
   object-fit: contain;
-  width: 348px;
+  width: 320px;
   border: 1px dotted white;
 }
 
@@ -372,7 +380,7 @@ h3 span {
   padding: 20px;
   transform: translateY(-3px);
   border: 1px dotted white;
-  width: 348px;
+  width: 320px;
 }
 
 .card-info a {
@@ -390,12 +398,12 @@ h3 span {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80px;
+  
   font-size: 18px;
 }
 
 .tech-used > li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* ! Blog Section */
@@ -452,21 +460,49 @@ h3 span {
   font-size: 40px;
 }
 
-.imgPlusText{
+.singleTitleContainer{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+.single-project-git-icon{
+  color: white;
+}
+
+.single-project-container ul{
+  padding-left: 20px;
+}
+
+.imgPlusText{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  margin: auto;
+  width: 70%;
+  max-width: 689px;
+}
+
 .imgPlusText p{
-  width: 90%;
+  width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 768px;
 }
 
+.imgPlusText h2{
+  margin-top: 30px;
+  
+}
+
+.imgPlusText hr{
+  
+  margin: 10px auto 0 auto
+}
+
 .single-project-img{
-  width: 90%;
+  width: 100%;
   max-width: 768px;
 }
 
@@ -475,15 +511,91 @@ h3 span {
   margin-bottom: 20px;
 }
 
+.funcMadeContainer{
+  width: 70%;
+  margin: auto;
+  max-width: 689px;
+}
+
+.funcMadeContainer ul{
+  margin-bottom: 50px;
+}
+
 .funcMade{
-  width: 60%;
-  margin: 0 auto;
-  max-width: 660px;
+  width: 100%;
+  margin: 10px auto 20px auto;
   /* display: grid;
   grid-template-columns: 1fr 1fr; */
 }
 
+/* ! single-blog.html */
+.single-post-img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-post-img{
+  width: 100%;
+  margin: 0 auto 50px auto;
+  max-width: 400px;
+}
+
+.elementor-section{
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+
+
+.elementor-section p{
+  width: 70%;
+  margin: 20px auto;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.single-post-title-sm-scr{
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.post-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.author p,
+.posted-time p {
+  margin-bottom: 20px;
+}
+
+
+
 /* ! Media Queries */
+
+@media (min-width: 375px){
+  .projects-container{
+    width: 340px;
+  }
+
+  .card-img-container img{
+    width: 340px;
+  }
+
+  .card-info{
+    width: 340px;
+  }
+
+  .about-me-tech{
+    width: 340px;
+  }
+}
 
 @media (min-width: 768px) {
   /* !MQ About me section */
@@ -499,6 +611,12 @@ h3 span {
 
   .about-me-text {
     height: 400px;
+    margin-right: 20px;
+    width: 70%;
+  }
+
+  .about-me-text p{
+    width: 100%;
   }
 
   .about-me-text p:last-child {
@@ -507,6 +625,7 @@ h3 span {
 
   .about-me-tech {
     height: 300px;
+    margin-left: 20px;
   }
 
   h3 span {
@@ -515,6 +634,10 @@ h3 span {
 
   .my-skills {
     font-size: 20px;
+  }
+
+  .my-skills li{
+    margin-bottom: 15px;
   }
 
   /* ! MQ portfolio section */
@@ -553,7 +676,15 @@ h3 span {
     max-width: 768px;
     margin: auto;
   }
+
+  /* ! MQ singleproject.html */
+  .funcMade{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+/* @media (min) */
 
 @media (min-width: 1271px) {
   /* !MQ Navbar */

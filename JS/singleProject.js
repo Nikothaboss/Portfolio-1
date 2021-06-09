@@ -4,14 +4,9 @@ const title = params.get("title");
 
 const contentToPage = document.querySelector(".single-project-container");
 
-
-
 let chosenObject =(project)=>{
     return project.objectName === title;
 };
-
-
-
 
 const singleProject = portfolio.find(chosenObject);
 const functions = singleProject.functionsMade;
@@ -23,14 +18,23 @@ const singleProjectTemplate=()=>{
     
 
     singleProjectNewDiv +=   `
-    <h1>${singleProject.title}</h1>
+    
     <div class="imgPlusText">
-        <img class="single-project-img" src="${singleProject.image}" alt="${singleProject.altText}">
+        <div class="singleTitleContainer">
+            <h1>${singleProject.title}</h1>
+            <a href="${singleProject.gitRepo}"><i class="fab fa-github fa-2x single-project-git-icon"></i></a>
+        </div>
+        <div class="single-project-img-container">
+            <img class="single-project-img" src="${singleProject.image}" alt="${singleProject.altText}">
+        </div>
+        <h2>About this project</h2>
+        <hr>
         <p>${singleProject.shortDescription}</p>
         
     </div>
-    <h2 class="funcMade">Functions I made in this project</h2>
-    <ul class="funcMade">
+    <div class="funcMadeContainer">
+        <h2 class="funcMade">Functions made:</h2>
+        <ul class="funcMade">
     `   
     
     for(func of functions){
@@ -43,7 +47,7 @@ const singleProjectTemplate=()=>{
 
     singleProjectNewDiv += `
     </ul>
-    <h2 class="funcMade">Technology used in this project</h2>
+    <h2 class="funcMade">Technology used:</h2>
     <ul class="funcMade">
     `
 
@@ -55,6 +59,7 @@ const singleProjectTemplate=()=>{
 
     singleProjectNewDiv += `
         </ul>
+        </div>
         <a class="btn single-project-btn" href="${singleProject.liveSiteLink}">Visit Site</a>
     `
     contentToPage.innerHTML = singleProjectNewDiv;  
