@@ -6,6 +6,7 @@ const id = params.get("id");
 const url = `https://nikolaireedlarsen.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 
 const singleBlogContainer = document.querySelector(".single-blog-container")
+const loading = document.querySelector(".single-loading")
 
 fetch(url, {
     "method": "GET",  
@@ -15,6 +16,7 @@ fetch(url, {
 .catch(err =>{
     console.error(err);
 }) 
+.finally(()=>loading.style.display = "none");
 
 const singleBlogTemplate =(blog)=>{
     document.title = "Blog" + " | " + blog.title.rendered;

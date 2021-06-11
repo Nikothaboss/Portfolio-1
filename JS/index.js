@@ -33,6 +33,7 @@ projectTemplate(portfolio)
 
 // ! Blog section
 const blogPosts = document.querySelector(".blog-posts");
+const loading = document.querySelector(".loading")
 const url = "https://nikolaireedlarsen.no/wp-json/wp/v2/posts?_embed=true&per_page=3";
 fetch(url, {
     "method": "GET",  
@@ -42,6 +43,7 @@ fetch(url, {
 .catch(err =>{
     console.error(err);
 }) 
+.finally(()=>loading.style.display = "none");
 
 const blogTemplate =(posts)=>{
     let newPost = ``

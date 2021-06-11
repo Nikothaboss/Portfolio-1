@@ -83,7 +83,7 @@ ul {
   height: 8vh;
 }
 
-.arrow-rotate{
+.arrow-rotate {
   transform: rotate(90deg);
 }
 
@@ -129,7 +129,7 @@ ul {
   height: 25%;
 }
 
-.navigation a{
+.navigation a {
   text-decoration: none;
   color: white;
 }
@@ -143,13 +143,20 @@ ul {
   margin-bottom: 40px;
 }
 
+.social-media a {
+  color: white;
+}
+
+.social-media a:hover {
+  color: var(--card-info-bg-color);
+}
+
 /* ! hamburger */
 .hamburger-icon-container {
   position: fixed;
   top: 40px;
   right: 20px;
   z-index: 9999;
-  /* border: 1px solid white; */
   background-color: rgba(0, 0, 0, 0.39);
 }
 
@@ -270,7 +277,6 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .about-me h2 {
@@ -292,7 +298,6 @@ ul {
 }
 
 .about-me p {
-  /* margin-bottom: 20px; */
   padding: 15px;
   line-height: 1.9;
   width: 320px;
@@ -323,7 +328,7 @@ h3 span {
   padding: 15px;
 }
 
-.my-skills li{
+.my-skills li {
   margin-bottom: 10px;
 }
 
@@ -341,10 +346,6 @@ h3 span {
   margin: auto;
   color: white;
 }
-
-/* .projects-container :nth-child(2) {
-  flex-direction: row-reverse;
-} */
 
 .projects-title {
   margin-top: 50px;
@@ -376,7 +377,6 @@ h3 span {
 }
 
 .card-info {
-  /* background-color: var(--card-info-bg-color); */
   padding: 20px;
   transform: translateY(-3px);
   border: 1px dotted white;
@@ -398,7 +398,7 @@ h3 span {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+
   font-size: 18px;
 }
 
@@ -412,7 +412,6 @@ h3 span {
   height: 100%;
   margin-top: 100px;
   margin-bottom: 50px;
-  
 }
 
 .blog-posts {
@@ -445,8 +444,15 @@ h3 span {
   border: 1px solid var(--card-info-bg-color);
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 628px;
+}
+
 /* ! single-project.html */
-.single-project-container{
+.single-project-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -454,74 +460,68 @@ h3 span {
   min-height: 100vh;
 }
 
-.single-project-container h1{
+.single-project-container h1 {
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: 40px;
 }
 
-.singleTitleContainer{
+.singleTitleContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.single-project-git-icon{
+.single-project-git-icon {
   color: white;
 }
 
-.single-project-container ul{
+.single-project-container ul {
   padding-left: 20px;
 }
 
-.imgPlusText{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; */
+.imgPlusText {
   margin: auto;
   width: 70%;
   max-width: 689px;
 }
 
-.imgPlusText p{
+.imgPlusText p {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 768px;
 }
 
-.imgPlusText h2{
+.imgPlusText h2 {
   margin-top: 30px;
-  
 }
 
-.imgPlusText hr{
-  
-  margin: 10px auto 0 auto
+.imgPlusText hr {
+  margin: 10px auto 0 auto;
 }
 
-.single-project-img{
+.single-project-img {
   width: 100%;
   max-width: 768px;
 }
 
-.single-project-btn{
+.single-project-btn {
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.funcMadeContainer{
+.funcMadeContainer {
   width: 70%;
   margin: auto;
   max-width: 689px;
 }
 
-.funcMadeContainer ul{
+.funcMadeContainer ul {
   margin-bottom: 50px;
 }
 
-.funcMade{
+.funcMade {
   width: 100%;
   margin: 10px auto 20px auto;
   /* display: grid;
@@ -529,39 +529,37 @@ h3 span {
 }
 
 /* ! single-blog.html */
-.single-post-img-container{
+.single-post-img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.single-post-img{
+.single-post-img {
   width: 100%;
   margin: 0 auto 50px auto;
   max-width: 400px;
 }
 
-.elementor-section{
+.elementor-section {
   height: 100%;
   margin-bottom: 100px;
 }
 
-
-
-.elementor-section p{
+.elementor-section p {
   width: 70%;
   margin: 20px auto;
   max-width: 800px;
   flex-wrap: wrap;
 }
 
-.single-post-title-sm-scr{
+.single-post-title-sm-scr {
   width: 70%;
   max-width: 800px;
   margin: auto;
 }
 
-.post-info{
+.post-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -575,24 +573,29 @@ h3 span {
   margin-bottom: 20px;
 }
 
-
+.single-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 /* ! Media Queries */
 
-@media (min-width: 375px){
-  .projects-container{
+@media (min-width: 375px) {
+  .projects-container {
     width: 340px;
   }
 
-  .card-img-container img{
+  .card-img-container img {
     width: 340px;
   }
 
-  .card-info{
+  .card-info {
     width: 340px;
   }
 
-  .about-me-tech{
+  .about-me-tech {
     width: 340px;
   }
 }
@@ -615,7 +618,7 @@ h3 span {
     width: 70%;
   }
 
-  .about-me-text p{
+  .about-me-text p {
     width: 100%;
   }
 
@@ -636,7 +639,7 @@ h3 span {
     font-size: 20px;
   }
 
-  .my-skills li{
+  .my-skills li {
     margin-bottom: 15px;
   }
 
@@ -678,13 +681,11 @@ h3 span {
   }
 
   /* ! MQ singleproject.html */
-  .funcMade{
+  .funcMade {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/* @media (min) */
 
 @media (min-width: 1271px) {
   /* !MQ Navbar */
